@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://paxle86:paxle86@contactkeeper.bmuk7.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "mysecret"
+}

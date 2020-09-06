@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 5000;
+const connectDB = require('./config/db');
+
+//Connect mongdoDB
+connectDB();
+
+// Init Middleware
+app.use(express.json({ extended: false }));
 
 app.get('/', (req, res) => res.json({ msg: 'Hello world' }));
 
